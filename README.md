@@ -3,8 +3,12 @@
 # Introduction
 ## What is this?
 This project was created to publish the best practices for segmentation of the CI/CD based on the Azure DevOps Serve (on-premise). In general, the schemes in this project are suitable for any company.
+## Schematic symbols
+Elements used in network diagrams:<br/>
+![Schematic symbols](https://github.com/sergiomarotco/Azure-DevOps-Server-segmentation-cheat-sheet/blob/main/Assets/Network_Segmentation_Cheat_Sheet_Schematic_symbols.drawio.png)<br/>
+Crossing the border of the rectangle means crossing the firewall.
 ## About Azure DevOps Server
-**Azure DevOps Server** combines the following core products:
+[Azure DevOps Server](https://azure.microsoft.com/services/devops/server/) combines the following core products:
 - [Azure Repos](https://azure.microsoft.com/services/devops/repos/) - source code storage;
 - [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) - CI/CD service;
 - [Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts/) - packages storage, but often companies use another service, for example, [Jfrog Artifactory](https://jfrog.com/artifactory/).
@@ -17,4 +21,4 @@ In the process of protecting [software supply chains](https://en.wikipedia.org/w
 # Mapping Threats from SLSA to Network Diagram
 ## Source integrity threats
 ### (A) Submit unauthorized change
-![Azure DevOps Server segmentation](https://raw.githubusercontent.com/sergiomarotco/Azure-DevOps-Server-segmentation-cheat-sheet/main/Assets/Azure-DevOps-Server-segmentation-cheat-sheet.jpg)<br/>
+![Azure DevOps Server segmentation](https://raw.githubusercontent.com/sergiomarotco/Azure-DevOps-Server-segmentation-cheat-sheet/main/Assets/Azure-DevOps-Server-segmentation-cheat-sheet.%20SLSA.%20A.jpg)<br/>
