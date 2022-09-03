@@ -1,4 +1,4 @@
-# Azure DevOps Server segmentation cheat sheet
+# Azure DevOps Server segmentation cheat sheet (in developing)
 # Introduction
 ## What is this?
 This project was created to publish the best practices for segmentation of the CI/CD based on the Azure DevOps Serve (on-premise). In general, the schemes in this project are suitable for any company.
