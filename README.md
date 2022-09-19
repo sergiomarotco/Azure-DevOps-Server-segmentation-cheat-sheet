@@ -32,7 +32,7 @@ Organizations often use contractors to help develop software. This speeds up dev
 
 In this example, let's only consider access to change the source code of a repository.
 As you can see, direct access from the Internet creates a risk of access by an attacker disguised as a contractor.
-Further, the attacker, noticing that the pipelines in the company are described in the form of a YAML file in the same repository, the attacker will try to modify them so that they perform malicious actions. The "everything as code" principle should be implemented safely, it should not be that untrusted persons can change the code that can harm the company's infrastructure or such that do not require review by an employee of the organization.
+Further, the attacker, noticing that the pipelines in the company are described in the form of a YAML file in the same repository, the attacker will try to modify them so that they perform malicious actions. The "Everything as code" principle should be implemented safely, it should not be that untrusted persons can change the code that can harm the company's infrastructure or such that do not require review by an employee of the organization.
 
 ![Attacker disguised as a contractor](https://raw.githubusercontent.com/sergiomarotco/Azure-DevOps-Server-segmentation-cheat-sheet/main/Assets/Azure-DevOps-Server-segmentation-cheat-sheet.Contractors.Attack.jpg)
 
