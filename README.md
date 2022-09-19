@@ -1,7 +1,7 @@
 # Azure DevOps Server segmentation cheat sheet (in developing)
 # Introduction
 ## What is this?
-This project was created to publish the best practices for segmentation of the CI/CD based on the Azure DevOps Serve (on-premise). In general, the schemes in this project are suitable for any company.
+This project was created to publish the best practices for segmentation of the CI/CD based on the Azure DevOps Server (on-premise). In general, the schemes in this project are suitable for any company.
 ## Schematic symbols
 Elements used in network diagrams:<br/>
 ![Schematic symbols](https://github.com/sergiomarotco/Azure-DevOps-Server-segmentation-cheat-sheet/blob/main/Assets/Network_Segmentation_Cheat_Sheet_Schematic_symbols.drawio.png)<br/>
