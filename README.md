@@ -36,6 +36,11 @@ Further, the attacker, noticing that the pipelines in the company are described 
 
 ![Attacker disguised as a contractor](https://raw.githubusercontent.com/sergiomarotco/Azure-DevOps-Server-segmentation-cheat-sheet/main/Assets/Azure-DevOps-Server-segmentation-cheat-sheet.Contractors.Attack.jpg)
 
+To test applications on your test environment, the contractor will need access to the test environment. To build the application locally on computers on the contractor's local network, they will need to have access to the dependencies stored in your artifact repository (Artifactory in our example). Let's try to show all these interactions, and in order to reduce the attack surface, the contractor must be able to access not directly from the Internet, but through a virtual private network.
+Additionally, the best option is to provide access through intermediate controlled workstations (VDI).
+
+![Controlled contractor access](https://raw.githubusercontent.com/sergiomarotco/Azure-DevOps-Server-segmentation-cheat-sheet/main/Assets/Azure-DevOps-Server-segmentation-cheat-sheet.Contractors.VPN.jpg)
+
 # Mapping Threats from SLSA to Network Diagram
 In the process of protecting [software supply chains](https://en.wikipedia.org/wiki/Software_supply_chain), according to various frameworks, for example, [SLSA](https://github.com/slsa-framework/slsa), it is necessary to protect these services. One way is to segment and limit access only on certain network ports to all components of the software supply chain.
 ## Source integrity threats
