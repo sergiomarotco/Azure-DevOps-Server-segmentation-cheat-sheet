@@ -24,6 +24,18 @@ Delivery of software to the operating environment is performed by the same agent
 Final scheme:
 
 ![Segmentation build agents](https://raw.githubusercontent.com/sergiomarotco/Azure-DevOps-Server-segmentation-cheat-sheet/main/Assets/Azure-DevOps-Server-segmentation-cheat-sheet.BuildAgents.jpg)
+
+## Contractors access
+Organizations often use contractors to help develop software. This speeds up development, however, it adds some risks associated with compromising the infrastructure of the development system or source code. Consider an example of insecure direct access by a contractor from the Internet to a source code repository:
+
+![Contractors access from Internet](https://raw.githubusercontent.com/sergiomarotco/Azure-DevOps-Server-segmentation-cheat-sheet/main/Assets/Azure-DevOps-Server-segmentation-cheat-sheet.Contractors.jpg)
+
+In this example, let's only consider access to change the source code of a repository.
+As you can see, direct access from the Internet creates a risk of access by an attacker disguised as a contractor.
+Further, the attacker, noticing that the pipelines in the company are described in the form of a YAML file in the same repository, the attacker will try to modify them so that they perform malicious actions. The "everything as code" principle should be implemented safely, it should not be that untrusted persons can change the code that can harm the company's infrastructure or such that do not require review by an employee of the organization.
+
+![Attacker disguised as a contractor](https://raw.githubusercontent.com/sergiomarotco/Azure-DevOps-Server-segmentation-cheat-sheet/main/Assets/Azure-DevOps-Server-segmentation-cheat-sheet.Contractors.Attack.jpg)
+
 # Mapping Threats from SLSA to Network Diagram
 In the process of protecting [software supply chains](https://en.wikipedia.org/wiki/Software_supply_chain), according to various frameworks, for example, [SLSA](https://github.com/slsa-framework/slsa), it is necessary to protect these services. One way is to segment and limit access only on certain network ports to all components of the software supply chain.
 ## Source integrity threats
